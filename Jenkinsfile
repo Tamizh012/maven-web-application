@@ -1,4 +1,4 @@
-node('slaves'){
+node('Slaves'){
 
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '8')), pipelineTriggers([githubPush()])])
     
